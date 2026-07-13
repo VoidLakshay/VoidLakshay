@@ -14,13 +14,14 @@ try {
 
 const formatNumber = (num) => num > 999 ? (num/1000).toFixed(1) + 'k' : num;
 
-function generateSVG() {
-  const bg = '#161B22';
-  const border = '#30363D';
-  const label = '#F59E0B'; // Subtle orange
-  const value = '#E6EDF3'; // White
-  const muted = '#8B949E';
-  const success = '#3FB950';
+function generateSVG(theme = 'dark') {
+  const isDark = theme === 'dark';
+  const bg = isDark ? '#161B22' : '#FFFFFF';
+  const border = isDark ? '#30363D' : '#D0D7DE';
+  const label = isDark ? '#F59E0B' : '#1F883D'; // Subtle orange in dark, green in light
+  const value = isDark ? '#E6EDF3' : '#24292F'; // White in dark, dark gray in light
+  const muted = isDark ? '#8B949E' : '#57606A';
+  const asciiColor = isDark ? '#C9D1D9' : '#24292F';
 
   let languagesText = stats.languages
     .map(l => l.name)
@@ -79,7 +80,7 @@ function generateSVG() {
 
   const lines = customAscii.split('\n').slice(0, 41);
   const asciiStartY = 55;
-  const asciiSVG = `<text font-family="ConsolasFallback,Consolas,monospace" font-size="12" fill="#C9D1D9" xml:space="preserve">
+  const asciiSVG = `<text font-family="ConsolasFallback,Consolas,monospace" font-size="12" fill="${asciiColor}" xml:space="preserve">
 ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</tspan>`).join('\n')}
   </text>`;
 
@@ -200,7 +201,7 @@ ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.repla
 </svg>`;
 }
 
-fs.writeFileSync(darkOutPath, generateSVG());
+fs.writeFileSync(darkOutPath, generateSVG('dark'));
 console.log('Generated dark.svg');
-fs.writeFileSync(lightOutPath, generateSVG());
+fs.writeFileSync(lightOutPath, generateSVG('light'));
 console.log('Generated light.svg');
