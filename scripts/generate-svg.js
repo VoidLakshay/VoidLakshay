@@ -87,7 +87,7 @@ ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.repla
   // Helpers
   const rightPanelX = 420;
   let currentY = asciiStartY;
-  const rowHeight = 22.9;
+  const rowHeight = 18.5;
 
   const renderRow = (x, y, labelStr, valueStr, totalLen = 61) => {
     const prefix = `. ${labelStr}: `;
@@ -149,6 +149,13 @@ ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.repla
   addRow("Cloud", "Docker, RabbitMQ, AWS S3, Cloudinary");
   addRow("Languages", "JavaScript, TypeScript");
   
+  addBlank();
+  
+  addHeader("Hobbies");
+  addRow("Strategy", "Chess");
+  addRow("Creative", "Content Creation");
+  addRow("Leisure", "Music");
+
   addBlank();
   
   addHeader("Contact");
