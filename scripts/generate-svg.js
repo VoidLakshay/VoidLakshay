@@ -164,7 +164,7 @@ ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.repla
   addRow("Location", "Sonipat, Haryana, India");
   addRow("Email", "lakshayvashisth09@gmail.com");
   addRow("GitHub", "VoidLakshay");
-  addRow("LinkedIn", "lakshay-vashisth-768517385");
+  addRow("LinkedIn", "lakshayvashisth");
   addRow("Discord", "voidlakshay");
 
   addBlank();
