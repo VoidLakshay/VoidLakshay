@@ -1,10 +1,6 @@
-<a href="https://github.com/YOUR_USERNAME">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="./assets/dark.svg">
-    <img
-      src="./assets/light.svg"
-      alt="Lakshay Vashishth GitHub README">
-  </picture>
+<a href="https://github.com/VoidLakshay">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VoidLakshay/VoidLakshay/main/assets/dark.svg">
+<img src="https://raw.githubusercontent.com/VoidLakshay/VoidLakshay/main/assets/light.svg">
+</picture>
 </a>

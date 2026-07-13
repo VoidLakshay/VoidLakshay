@@ -1,226 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580">
+  <defs>
+    <style>
+      .text { font-family: Consolas, "Courier New", Courier, monospace; }
+      .header { font-weight: bold; font-size: 16px; }
+      .title { font-weight: bold; font-size: 15px; }
+      .name { font-weight: bold; font-size: 26px; }
+      .row { font-size: 15px; }
+      .footer { font-size: 12px; }
+      .status { font-size: 15px; }
+      .cursor { animation: blink 1s step-end infinite; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      text, tspan { white-space: pre; }
+    </style>
+  </defs>
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1080"
-     height="620"
-     viewBox="0 0 1080 620">
-
-    <!-- Background -->
-    <rect
-        width="1080"
-        height="620"
-        rx="18"
-        fill="#0D1117"/>
-
-    <!-- Header -->
-    <text
-        x="35"
-        y="45"
-        font-size="22"
-        font-family="Consolas, monospace"
-        font-weight="600"
-        fill="#E6EDF3">
-        lakshay@github:~$
-    </text>
-
-    <line
-        x1="35"
-        y1="65"
-        x2="1045"
-        y2="65"
-        stroke="#30363D"
-        stroke-width="2"/>
-         
-    <!-- Left Panel -->
-   
-    <rect
-        x="35"
-        y="95"
-        width="340"
-        height="500"
-        rx="12"
-        fill="#161B22"
-        stroke="#30363D"
-        stroke-width="2"/>
-          <!-- Avatar -->
-
-<circle
-    cx="205"
-    cy="185"
-    r="90"
-    fill="#21262D"
-    stroke="#30363D"
-    stroke-width="3"/>
-    <text
-    x="205"
-    y="320"
-    text-anchor="middle"
-    font-size="22"
-    font-family="Consolas, monospace"
-    fill="#E6EDF3"
-    font-weight="600">
-
-    Lakshay Vashishth
+  <!-- Background -->
+  <rect width="1000" height="580" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
   
-</text>
-<text
-    x="205"
-    y="350"
-    text-anchor="middle"
-    font-size="15"
-    font-family="Consolas, monospace"
-    fill="#8B949E">
+  <!-- Terminal Header -->
+  <text x="40" y="25" fill="#8B949E" class="text header">lakshay@github:~$ neofetch<tspan class="cursor" fill="#E6EDF3"> █</tspan></text>
+  <text x="960" y="25" fill="#8B949E" class="text footer" text-anchor="end">Last Updated: <tspan fill="#E6EDF3">2026-07-13 12:08:48 UTC</tspan></text>
 
-    Full Stack Software Engineer
-
-</text>
-<line
-    x1="80"
-    y1="380"
-    x2="330"
-    y2="380"
-    stroke="#30363D"/>
-
-    <!-- Right Panel Title -->
-    <text
-        x="410"
-        y="115"
-        font-size="20"
-        font-family="Consolas, monospace"
-        font-weight="600"
-        fill="#F59E0B">
-        System Information
-    </text>
-
-    <line
-        x1="410"
-        y1="130"
-        x2="1045"
-        y2="130"
-        stroke="#30363D"
-        stroke-width="1.5"/>
-
-    <!-- Info -->
-    <text
-        x="410"
-        y="165"
-        font-size="17"
-        font-family="Consolas, monospace"
-        fill="#E6EDF3">
-
-        <tspan x="410" dy="0">
-            <tspan fill="#F59E0B">Role</tspan>
-            <tspan fill="#8B949E"> ............. </tspan>
-            <tspan>Full Stack Software Engineer</tspan>
-        </tspan>
-
-        <tspan x="410" dy="30">
-            <tspan fill="#F59E0B">Location</tspan>
-            <tspan fill="#8B949E"> ......... </tspan>
-            <tspan>Sonipat, Haryana, India</tspan>
-        </tspan>
-
-        <tspan x="410" dy="30">
-            <tspan fill="#F59E0B">Editor</tspan>
-            <tspan fill="#8B949E"> ........... </tspan>
-            <tspan>VS Code</tspan>
-        </tspan>
-
-        <tspan x="410" dy="30">
-            <tspan fill="#F59E0B">Learning</tspan>
-            <tspan fill="#8B949E"> ........ </tspan>
-            <tspan>DSA • System Design • AI</tspan>
-        </tspan>
-
-    </text>
-         <!-- Tech Stack Title -->
-<text
-    x="410"
-    y="330"
-    font-size="20"
-    font-family="Consolas, monospace"
-    font-weight="600"
-    fill="#F59E0B">
-    Tech Stack
-</text>
-  <!-- Current Focus -->
+  <!-- LEFT PANEL -->
+  <text font-family="ConsolasFallback,Consolas,monospace" font-size="12" fill="#C9D1D9" xml:space="preserve">
+<tspan x="40" y="55">                                                   </tspan>
+<tspan x="40" y="67">                         @@@@                      </tspan>
+<tspan x="40" y="79">                    @@@@@@@@@@@@@@@                </tspan>
+<tspan x="40" y="91">                  @@@@@@@@@@@@@@@@@@@@             </tspan>
+<tspan x="40" y="103">             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@         </tspan>
+<tspan x="40" y="115">       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      </tspan>
+<tspan x="40" y="127">    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    </tspan>
+<tspan x="40" y="139">  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   </tspan>
+<tspan x="40" y="151">  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  </tspan>
+<tspan x="40" y="163"> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ </tspan>
+<tspan x="40" y="175">  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="40" y="187"> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="40" y="199"> @@@@@@@@@@@@@@@%*+===++*%@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="40" y="211">  @@@@@@@@@@@%++===------=*#%@%%#+=+#@@@@@@@@@@@@@@</tspan>
+<tspan x="40" y="223">  @@@@@@@@##++===--------:----======+#@@@@@@@@@@@@@</tspan>
+<tspan x="40" y="235">  @@@@@@@#++====------::::---------==+#%@@@@@@@@@@@</tspan>
+<tspan x="40" y="247">  @@@@@@%#+===+**==-::::..::::-----==+*#%@@@@@@@@@@</tspan>
+<tspan x="40" y="259">   @@@@@#%@@@@@@@@@%#--....:::-==*#%**##%@@@@@@@@@ </tspan>
+<tspan x="40" y="271">   --#@+##+-:::-=++*+-:.....--==*@@@@@@@@@@@@@@@@  </tspan>
+<tspan x="40" y="283">  *++=+==----===----:......:-+**###%@@@@@@@@@@     </tspan>
+<tspan x="40" y="295">  =+:-=--=+#@##@@%*=--....:-----=-----=*@@@@@      </tspan>
+<tspan x="40" y="307">  ===+=======+*%%%+#+=---=+*#**+@@@%%@##%%@@%      </tspan>
+<tspan x="40" y="319">  +#*===------:::---=+===*#%%*++%@@#@@@##%%%#      </tspan>
+<tspan x="40" y="331">  +%*=-------::::--==++=+#%%%#+=--==++*##%%##      </tspan>
+<tspan x="40" y="343">  +=+=------------==++++#%%%##*==--===+*#%@%%      </tspan>
+<tspan x="40" y="355">    =+-------:----=+++++#%%%%#+=======++#%@@       </tspan>
+<tspan x="40" y="367">     +=-----:::::-++==-=+#%@@*========++#%%@       </tspan>
+<tspan x="40" y="379">     #=---::::..:----:::-++*#+----====++#@         </tspan>
+<tspan x="40" y="391">      +-----::::--===---=#%#+=----===++#@@         </tspan>
+<tspan x="40" y="403">      #=----::----=+*=-=+#@%#+=---===+#%@          </tspan>
+<tspan x="40" y="415">    @@@*=----=%#%%@@@%%@@@@@@@@#====+*%@           </tspan>
+<tspan x="40" y="427">@@%###@@+=---*#*#+====+****##@@@%=++*#@@           </tspan>
+<tspan x="40" y="439">@@#++++@@+=----=+#########%%@@*##+*#%@@@%%%%%@@    </tspan>
+<tspan x="40" y="451">@@#+++#@@%+=-----====+++++##%#++=+#@@@@#++++*##%@@@</tspan>
+<tspan x="40" y="463">@@%**%@%@@%+==------=+##+===+++++#@@@##*++==++#%%@@</tspan>
+<tspan x="40" y="475">%%%##+%**%@@%+=-------=+=--==+*#@@@@%%#*+++++#%@@@@</tspan>
+<tspan x="40" y="487">%%%%###++++@@@#+=-----==+++*#%@@@@@%*%#**+*#%%@@@@@</tspan>
+<tspan x="40" y="499">%@@%##%++=++@@@@%%%#%%#%%%@@@@@@@@@*########%%%%%%%</tspan>
+<tspan x="40" y="511">@@@@%@@#+===+@@@@@@@@@@@@@@@@@@%##*++*#########*#**</tspan>
+<tspan x="40" y="523">@%@@@%%@+======+%@@@@@@@@@@@@*+**#%*#########++++++</tspan>
+<tspan x="40" y="535">%%%%%#%@#+++===----+#%##%#*+++++==+*+*####**+++====</tspan>
+  </text>
   
+  <!-- RIGHT PANEL -->
+  <text x="420" y="55" class="text title"><tspan fill="#8B949E">- </tspan><tspan fill="#E6EDF3">Tech Stack </tspan><tspan fill="#8B949E">------------------------------------------------</tspan></text>
+<text x="420" y="77.9" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Frontend: </tspan><tspan fill="#8B949E">........</tspan><tspan fill="#E6EDF3"> React, Next.js, Redux, Zustand, Tailwind</tspan></text>
+<text x="420" y="100.80000000000001" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Backend: </tspan><tspan fill="#8B949E">..............</tspan><tspan fill="#E6EDF3"> Node.js, Express, REST APIs, Prisma</tspan></text>
+<text x="420" y="123.70000000000002" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Database: </tspan><tspan fill="#8B949E">......................</tspan><tspan fill="#E6EDF3"> PostgreSQL, MongoDB, Redis</tspan></text>
+<text x="420" y="146.60000000000002" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Cloud: </tspan><tspan fill="#8B949E">...............</tspan><tspan fill="#E6EDF3"> Docker, RabbitMQ, AWS S3, Cloudinary</tspan></text>
+<text x="420" y="169.50000000000003" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Languages: </tspan><tspan fill="#8B949E">.........................</tspan><tspan fill="#E6EDF3"> JavaScript, TypeScript</tspan></text>
+<text x="420" y="215.30000000000004" class="text title"><tspan fill="#8B949E">- </tspan><tspan fill="#E6EDF3">Contact </tspan><tspan fill="#8B949E">---------------------------------------------------</tspan></text>
+<text x="420" y="238.20000000000005" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Name: </tspan><tspan fill="#8B949E">...................................</tspan><tspan fill="#E6EDF3"> Lakshay Vashishth</tspan></text>
+<text x="420" y="261.1" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Role: </tspan><tspan fill="#8B949E">........................</tspan><tspan fill="#E6EDF3"> Full Stack Software Engineer</tspan></text>
+<text x="420" y="284" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Location: </tspan><tspan fill="#8B949E">.........................</tspan><tspan fill="#E6EDF3"> Sonipat, Haryana, India</tspan></text>
+<text x="420" y="306.9" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Email: </tspan><tspan fill="#8B949E">........................</tspan><tspan fill="#E6EDF3"> lakshayvashisth09@gmail.com</tspan></text>
+<text x="420" y="329.79999999999995" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">GitHub: </tspan><tspan fill="#8B949E">.......................................</tspan><tspan fill="#E6EDF3"> VoidLakshay</tspan></text>
+<text x="420" y="352.69999999999993" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">LinkedIn: </tspan><tspan fill="#8B949E">......................</tspan><tspan fill="#E6EDF3"> lakshay-vashisth-768517385</tspan></text>
+<text x="420" y="375.5999999999999" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Discord: </tspan><tspan fill="#8B949E">......................................</tspan><tspan fill="#E6EDF3"> voidlakshay</tspan></text>
+<text x="420" y="421.39999999999986" class="text title"><tspan fill="#8B949E">- </tspan><tspan fill="#E6EDF3">GitHub Statistics </tspan><tspan fill="#8B949E">-----------------------------------------</tspan></text>
+<text x="420" y="444.29999999999984" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Repositories: </tspan><tspan fill="#8B949E">..........</tspan><tspan fill="#E6EDF3"> 15 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Followers: </tspan><tspan fill="#8B949E">...............</tspan><tspan fill="#E6EDF3"> 42</tspan></text>
+<text x="420" y="467.1999999999998" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Stars: </tspan><tspan fill="#8B949E">................</tspan><tspan fill="#E6EDF3"> 120 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Commits: </tspan><tspan fill="#8B949E">................</tspan><tspan fill="#E6EDF3"> 850</tspan></text>
+<text x="420" y="490.0999999999998" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Pull Requests: </tspan><tspan fill="#8B949E">.........</tspan><tspan fill="#E6EDF3"> 15 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Contributions: </tspan><tspan fill="#8B949E">........</tspan><tspan fill="#E6EDF3"> 1.1k+</tspan></text>
+<text x="420" y="512.9999999999998" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Lines of Code: </tspan><tspan fill="#8B949E">.....................................</tspan><tspan fill="#E6EDF3"> 45.2k+</tspan></text>
+<text x="420" y="535.8999999999997" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Languages Used: </tspan><tspan fill="#8B949E">....................</tspan><tspan fill="#E6EDF3"> JavaScript, TypeScript</tspan></text>
 
-<text
-    x="410"
-    y="530"
-    font-size="20"
-    font-family="Consolas, monospace"
-    font-weight="600"
-    fill="#F59E0B">
-    Current Focus
-</text>
 
-<line
-    x1="410"
-    y1="545"
-    x2="1045"
-    y2="545"
-    stroke="#30363D"
-    stroke-width="1.5"/>
-
-<text
-    x="410"
-    y="575"
-    font-size="16"
-    font-family="Consolas, monospace"
-    fill="#E6EDF3">
-
-    <tspan x="410" dy="0">
-    Building production-grade applications
-</tspan>
-
-<tspan x="410" dy="24">
-    Daily DSA 
-</tspan>
-
-<tspan x="410" dy="24">
-    System Design &amp; Backend Engineering
-</tspan>
-</text>
-
-<line
-    x1="410"
-    y1="345"
-    x2="1045"
-    y2="345"
-    stroke="#30363D"
-    stroke-width="1.5"/>
-    <text
-    x="410"
-    y="380"
-    font-size="17"
-    font-family="Consolas, monospace"
-    fill="#E6EDF3">
-
-    <tspan x="410" dy="0">
-        <tspan fill="#F59E0B">Frontend</tspan>
-        <tspan fill="#8B949E"> ......... </tspan>
-        <tspan>React • Next.js • Tailwind</tspan>
-    </tspan>
-
-    <tspan x="410" dy="30">
-        <tspan fill="#F59E0B">Backend</tspan>
-        <tspan fill="#8B949E"> .......... </tspan>
-        <tspan>Node.js • Express • REST APIs</tspan>
-    </tspan>
-
-    <tspan x="410" dy="30">
-        <tspan fill="#F59E0B">Database</tspan>
-        <tspan fill="#8B949E"> ......... </tspan>
-        <tspan>PostgreSQL • MongoDB • Redis</tspan>
-    </tspan>
-
-    <tspan x="410" dy="30">
-        <tspan fill="#F59E0B">Cloud</tspan>
-        <tspan fill="#8B949E"> ............ </tspan>
-        <tspan>Docker • RabbitMQ • AWS S3</tspan>
-    </tspan>
-
-</text>
 </svg>

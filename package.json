@@ -1,0 +1,14 @@
+{
+  "name": "lakshayvashisth",
+  "version": "1.0.0",
+  "description": "Dynamic GitHub Profile README",
+  "main": "index.js",
+  "scripts": {
+    "update": "node scripts/ascii-generator.js && node scripts/update-stats.js && node scripts/generate-svg.js"
+  },
+  "dependencies": {
+    "jimp": "^0.22.10"
+  },
+  "author": "Lakshay Vashishth",
+  "license": "ISC"
+}
