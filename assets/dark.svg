@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1080"
+     height="620"
+     viewBox="0 0 1080 620">
+
+    <!-- Background -->
+    <rect
+        width="1080"
+        height="620"
+        rx="18"
+        fill="#0D1117"/>
+
+    <!-- Header -->
+    <text
+        x="35"
+        y="45"
+        font-size="22"
+        font-family="Consolas, monospace"
+        font-weight="600"
+        fill="#E6EDF3">
+        lakshay@github:~$
+    </text>
+
+    <line
+        x1="35"
+        y1="65"
+        x2="1045"
+        y2="65"
+        stroke="#30363D"
+        stroke-width="2"/>
+         
+    <!-- Left Panel -->
+   
+    <rect
+        x="35"
+        y="95"
+        width="340"
+        height="500"
+        rx="12"
+        fill="#161B22"
+        stroke="#30363D"
+        stroke-width="2"/>
+          <!-- Avatar -->
+
+<circle
+    cx="205"
+    cy="185"
+    r="90"
+    fill="#21262D"
+    stroke="#30363D"
+    stroke-width="3"/>
+    <text
+    x="205"
+    y="320"
+    text-anchor="middle"
+    font-size="22"
+    font-family="Consolas, monospace"
+    fill="#E6EDF3"
+    font-weight="600">
+
+    Lakshay Vashishth
+  
+</text>
+<text
+    x="205"
+    y="350"
+    text-anchor="middle"
+    font-size="15"
+    font-family="Consolas, monospace"
+    fill="#8B949E">
+
+    Full Stack Software Engineer
+
+</text>
+<line
+    x1="80"
+    y1="380"
+    x2="330"
+    y2="380"
+    stroke="#30363D"/>
+
+    <!-- Right Panel Title -->
+    <text
+        x="410"
+        y="115"
+        font-size="20"
+        font-family="Consolas, monospace"
+        font-weight="600"
+        fill="#F59E0B">
+        System Information
+    </text>
+
+    <line
+        x1="410"
+        y1="130"
+        x2="1045"
+        y2="130"
+        stroke="#30363D"
+        stroke-width="1.5"/>
+
+    <!-- Info -->
+    <text
+        x="410"
+        y="165"
+        font-size="17"
+        font-family="Consolas, monospace"
+        fill="#E6EDF3">
+
+        <tspan x="410" dy="0">
+            <tspan fill="#F59E0B">Role</tspan>
+            <tspan fill="#8B949E"> ............. </tspan>
+            <tspan>Full Stack Software Engineer</tspan>
+        </tspan>
+
+        <tspan x="410" dy="30">
+            <tspan fill="#F59E0B">Location</tspan>
+            <tspan fill="#8B949E"> ......... </tspan>
+            <tspan>Sonipat, Haryana, India</tspan>
+        </tspan>
+
+        <tspan x="410" dy="30">
+            <tspan fill="#F59E0B">Editor</tspan>
+            <tspan fill="#8B949E"> ........... </tspan>
+            <tspan>VS Code</tspan>
+        </tspan>
+
+        <tspan x="410" dy="30">
+            <tspan fill="#F59E0B">Learning</tspan>
+            <tspan fill="#8B949E"> ........ </tspan>
+            <tspan>DSA • System Design • AI</tspan>
+        </tspan>
+
+    </text>
+         <!-- Tech Stack Title -->
+<text
+    x="410"
+    y="330"
+    font-size="20"
+    font-family="Consolas, monospace"
+    font-weight="600"
+    fill="#F59E0B">
+    Tech Stack
+</text>
+  <!-- Current Focus -->
+  
+
+<text
+    x="410"
+    y="530"
+    font-size="20"
+    font-family="Consolas, monospace"
+    font-weight="600"
+    fill="#F59E0B">
+    Current Focus
+</text>
+
+<line
+    x1="410"
+    y1="545"
+    x2="1045"
+    y2="545"
+    stroke="#30363D"
+    stroke-width="1.5"/>
+
+<text
+    x="410"
+    y="575"
+    font-size="16"
+    font-family="Consolas, monospace"
+    fill="#E6EDF3">
+
+    <tspan x="410" dy="0">
+    Building production-grade applications
+</tspan>
+
+<tspan x="410" dy="24">
+    Daily DSA 
+</tspan>
+
+<tspan x="410" dy="24">
+    System Design &amp; Backend Engineering
+</tspan>
+</text>
+
+<line
+    x1="410"
+    y1="345"
+    x2="1045"
+    y2="345"
+    stroke="#30363D"
+    stroke-width="1.5"/>
+    <text
+    x="410"
+    y="380"
+    font-size="17"
+    font-family="Consolas, monospace"
+    fill="#E6EDF3">
+
+    <tspan x="410" dy="0">
+        <tspan fill="#F59E0B">Frontend</tspan>
+        <tspan fill="#8B949E"> ......... </tspan>
+        <tspan>React • Next.js • Tailwind</tspan>
+    </tspan>
+
+    <tspan x="410" dy="30">
+        <tspan fill="#F59E0B">Backend</tspan>
+        <tspan fill="#8B949E"> .......... </tspan>
+        <tspan>Node.js • Express • REST APIs</tspan>
+    </tspan>
+
+    <tspan x="410" dy="30">
+        <tspan fill="#F59E0B">Database</tspan>
+        <tspan fill="#8B949E"> ......... </tspan>
+        <tspan>PostgreSQL • MongoDB • Redis</tspan>
+    </tspan>
+
+    <tspan x="410" dy="30">
+        <tspan fill="#F59E0B">Cloud</tspan>
+        <tspan fill="#8B949E"> ............ </tspan>
+        <tspan>Docker • RabbitMQ • AWS S3</tspan>
+    </tspan>
+
+</text>
+</svg>
