@@ -19,7 +19,7 @@
   
   <!-- Terminal Header -->
   <text x="40" y="25" fill="#8B949E" class="text header">lakshay@github:~$ neofetch<tspan class="cursor" fill="#E6EDF3"> █</tspan></text>
-  <text x="960" y="25" fill="#8B949E" class="text footer" text-anchor="end">Last Updated: <tspan fill="#E6EDF3">2026-07-14 01:13:39 UTC</tspan></text>
+  <text x="960" y="25" fill="#8B949E" class="text footer" text-anchor="end">Last Updated: <tspan fill="#E6EDF3">2026-07-15 01:11:00 UTC</tspan></text>
 
   <!-- LEFT PANEL -->
   <text font-family="ConsolasFallback,Consolas,monospace" font-size="12" fill="#C9D1D9" xml:space="preserve">
@@ -86,7 +86,7 @@
 <text x="420" y="388" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">LinkedIn: </tspan><tspan fill="#8B949E">.................................</tspan><tspan fill="#E6EDF3"> lakshayvashisth</tspan></text>
 <text x="420" y="406.5" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Discord: </tspan><tspan fill="#8B949E">......................................</tspan><tspan fill="#E6EDF3"> voidlakshay</tspan></text>
 <text x="420" y="443.5" class="text title"><tspan fill="#8B949E">- </tspan><tspan fill="#E6EDF3">GitHub Statistics </tspan><tspan fill="#8B949E">-----------------------------------------</tspan></text>
-<text x="420" y="462" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Repositories: </tspan><tspan fill="#8B949E">..........</tspan><tspan fill="#E6EDF3"> 12 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Followers: </tspan><tspan fill="#8B949E">................</tspan><tspan fill="#E6EDF3"> 4</tspan></text>
+<text x="420" y="462" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Repositories: </tspan><tspan fill="#8B949E">..........</tspan><tspan fill="#E6EDF3"> 12 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Followers: </tspan><tspan fill="#8B949E">................</tspan><tspan fill="#E6EDF3"> 7</tspan></text>
 <text x="420" y="480.5" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Stars: </tspan><tspan fill="#8B949E">..................</tspan><tspan fill="#E6EDF3"> 0 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Commits: </tspan><tspan fill="#8B949E">................</tspan><tspan fill="#E6EDF3"> 101</tspan></text>
 <text x="420" y="499" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Pull Requests: </tspan><tspan fill="#8B949E">..........</tspan><tspan fill="#E6EDF3"> 0 </tspan><tspan fill="#8B949E">| </tspan><tspan fill="#F59E0B">Contributions: </tspan><tspan fill="#8B949E">.........</tspan><tspan fill="#E6EDF3"> 114+</tspan></text>
 <text x="420" y="517.5" class="text row"><tspan fill="#8B949E">. </tspan><tspan fill="#F59E0B">Lines of Code: </tspan><tspan fill="#8B949E">.....................................</tspan><tspan fill="#E6EDF3"> 22.6k+</tspan></text>
