@@ -21,7 +21,6 @@ function generateSVG(theme = 'dark') {
   const label = isDark ? '#F59E0B' : '#1F883D'; // Subtle orange in dark, green in light
   const value = isDark ? '#E6EDF3' : '#24292F'; // White in dark, dark gray in light
   const muted = isDark ? '#8B949E' : '#57606A';
-  const asciiColor = isDark ? '#C9D1D9' : '#24292F';
 
   let languagesText = stats.languages
     .map(l => l.name)
@@ -29,64 +28,9 @@ function generateSVG(theme = 'dark') {
     .join(', ');
   if (!languagesText) languagesText = "JavaScript, TypeScript";
 
-  const customAscii = `                                                   
-                         @@@@                      
-                    @@@@@@@@@@@@@@@                
-                  @@@@@@@@@@@@@@@@@@@@             
-             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@         
-       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    
-  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
-  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
- @@@@@@@@@@@@@@@%*+===++*%@@@@@@@@@@@@@@@@@@@@@@@@@
-  @@@@@@@@@@@%++===------=*#%@%%#+=+#@@@@@@@@@@@@@@
-  @@@@@@@@##++===--------:----======+#@@@@@@@@@@@@@
-  @@@@@@@#++====------::::---------==+#%@@@@@@@@@@@
-  @@@@@@%#+===+**==-::::..::::-----==+*#%@@@@@@@@@@
-   @@@@@#%@@@@@@@@@%#--....:::-==*#%**##%@@@@@@@@@ 
-   --#@+##+-:::-=++*+-:.....--==*@@@@@@@@@@@@@@@@  
-  *++=+==----===----:......:-+**###%@@@@@@@@@@     
-  =+:-=--=+#@##@@%*=--....:-----=-----=*@@@@@      
-  ===+=======+*%%%+#+=---=+*#**+@@@%%@##%%@@%      
-  +#*===------:::---=+===*#%%*++%@@#@@@##%%%#      
-  +%*=-------::::--==++=+#%%%#+=--==++*##%%##      
-  +=+=------------==++++#%%%##*==--===+*#%@%%      
-    =+-------:----=+++++#%%%%#+=======++#%@@       
-     +=-----:::::-++==-=+#%@@*========++#%%@       
-     #=---::::..:----:::-++*#+----====++#@         
-      +-----::::--===---=#%#+=----===++#@@         
-      #=----::----=+*=-=+#@%#+=---===+#%@          
-    @@@*=----=%#%%@@@%%@@@@@@@@#====+*%@           
-@@%###@@+=---*#*#+====+****##@@@%=++*#@@           
-@@#++++@@+=----=+#########%%@@*##+*#%@@@%%%%%@@    
-@@#+++#@@%+=-----====+++++##%#++=+#@@@@#++++*##%@@@
-@@%**%@%@@%+==------=+##+===+++++#@@@##*++==++#%%@@
-%%%##+%**%@@%+=-------=+=--==+*#@@@@%%#*+++++#%@@@@
-%%%%###++++@@@#+=-----==+++*#%@@@@@%*%#**+*#%%@@@@@
-%@@%##%++=++@@@@%%%#%%#%%%@@@@@@@@@*########%%%%%%%
-@@@@%@@#+===+@@@@@@@@@@@@@@@@@@%##*++*#########*#**
-@%@@@%%@+======+%@@@@@@@@@@@@*+**#%*#########++++++
-%%%%%#%@#+++===----+#%##%#*+++++==+*+*####**+++====
-*#####%%@*+++==-:::::---======*+--+++*##*+++++=====
-=+++**+#%#*+++=---:..:-=====+*=#====++++++=======--
-=====++=#%+++===============++*+================---
----====-+*%===============++-=-----------======----
--------=:*-#+===========+**.:----------------------
-:--------::+=#=------=++:#.------------------------
-:::::::::::.+--=*#*++-=.::::---:-------------------`;
-
-  const lines = customAscii.split('\n').slice(0, 41);
-  const asciiStartY = 55;
-  const asciiSVG = `<text font-family="ConsolasFallback,Consolas,monospace" font-size="12" fill="${asciiColor}" xml:space="preserve">
-${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</tspan>`).join('\n')}
-  </text>`;
-
   // Helpers
-  const rightPanelX = 420;
-  let currentY = asciiStartY;
+  const rightPanelX = 40;
+  let currentY = 55;
   const rowHeight = 18.5;
 
   const renderRow = (x, y, labelStr, valueStr, totalLen = 61) => {
@@ -176,7 +120,8 @@ ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.repla
   addRow("Lines of Code", formatNumber(stats.loc) + "+");
   addRow("Languages Used", languagesText);
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580">
+  // Adjusted width from 1000 to something like 600
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="580" viewBox="0 0 600 580">
   <defs>
     <style>
       .text { font-family: Consolas, "Courier New", Courier, monospace; }
@@ -193,16 +138,13 @@ ${lines.map((line, i) => `<tspan x="40" y="${asciiStartY + i * 12}">${line.repla
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="580" rx="12" fill="${bg}" stroke="${border}" stroke-width="1"/>
+  <rect width="600" height="580" rx="12" fill="${bg}" stroke="${border}" stroke-width="1"/>
   
   <!-- Terminal Header -->
   <text x="40" y="25" fill="${muted}" class="text header">lakshay@github:~$ neofetch<tspan class="cursor" fill="${value}"> █</tspan></text>
-  <text x="960" y="25" fill="${muted}" class="text footer" text-anchor="end">Last Updated: <tspan fill="${value}">${stats.lastUpdated}</tspan></text>
+  <text x="560" y="25" fill="${muted}" class="text footer" text-anchor="end">Last Updated: <tspan fill="${value}">${stats.lastUpdated}</tspan></text>
 
-  <!-- LEFT PANEL -->
-  ${asciiSVG}
-  
-  <!-- RIGHT PANEL -->
+  <!-- RIGHT PANEL (now single panel) -->
   ${rightPanelSVG}
 
 </svg>`;
