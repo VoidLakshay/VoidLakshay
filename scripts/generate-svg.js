@@ -29,8 +29,10 @@ function generateSVG(theme = 'dark') {
   if (!languagesText) languagesText = "JavaScript, TypeScript";
 
   // Helpers
-  const rightPanelX = 40;
-  let currentY = 55;
+  const leftPanelX = 40;
+  const rightPanelX = 480;
+  let leftY = 55;
+  let rightY = 55;
   const rowHeight = 18.5;
 
   const renderRow = (x, y, labelStr, valueStr, totalLen = 61) => {
@@ -67,61 +69,74 @@ function generateSVG(theme = 'dark') {
      return `<text x="${x}" y="${y}" class="text row"><tspan fill="${muted}">. </tspan><tspan fill="${label}">${lbl1}: </tspan><tspan fill="${muted}">${leftDots}</tspan><tspan fill="${value}"> ${val1} </tspan><tspan fill="${muted}">| </tspan><tspan fill="${label}">${lbl2}: </tspan><tspan fill="${muted}">${rightDots}</tspan><tspan fill="${value}"> ${val2}</tspan></text>`;
   };
 
+  let leftPanelSVG = '';
   let rightPanelSVG = '';
 
-  const addHeader = (text) => {
-     rightPanelSVG += renderHeaderRow(rightPanelX, currentY, text) + '\n';
-     currentY += rowHeight;
-  };
-  const addRow = (label, value) => {
-     rightPanelSVG += renderRow(rightPanelX, currentY, label, value) + '\n';
-     currentY += rowHeight;
-  };
-  const addBlank = () => {
-     currentY += rowHeight;
-  };
-  const addStatsRow = (l1, v1, l2, v2) => {
-     rightPanelSVG += renderStatsRow(rightPanelX, currentY, l1, v1, l2, v2) + '\n';
-     currentY += rowHeight;
-  };
-
-  // Build Right Panel
-  addHeader("Tech Stack");
-  addRow("Frontend", "React, Next.js, Redux, Zustand, Tailwind");
-  addRow("Backend", "Node.js, Express, REST APIs, Prisma");
-  addRow("Database", "PostgreSQL, MongoDB, Redis");
-  addRow("Cloud", "Docker, RabbitMQ, AWS S3, Cloudinary");
-  addRow("Languages", "JavaScript, TypeScript");
+  const addLeftHeader = (text) => { leftPanelSVG += renderHeaderRow(leftPanelX, leftY, text) + '\\n'; leftY += rowHeight; };
+  const addLeftRow = (label, value) => { leftPanelSVG += renderRow(leftPanelX, leftY, label, value) + '\\n'; leftY += rowHeight; };
+  const addLeftBlank = () => { leftY += rowHeight; };
   
-  addBlank();
+  const addRightHeader = (text) => { rightPanelSVG += renderHeaderRow(rightPanelX, rightY, text) + '\\n'; rightY += rowHeight; };
+  const addRightRow = (label, value) => { rightPanelSVG += renderRow(rightPanelX, rightY, label, value) + '\\n'; rightY += rowHeight; };
+  const addRightBlank = () => { rightY += rowHeight; };
+  const addRightStatsRow = (l1, v1, l2, v2) => { rightPanelSVG += renderStatsRow(rightPanelX, rightY, l1, v1, l2, v2) + '\\n'; rightY += rowHeight; };
+
+  // --- Build Left Panel ---
+  addLeftHeader("Tech Stack");
+  addLeftRow("Frontend", "React, Next.js, Redux, Zustand, Tailwind");
+  addLeftRow("Backend", "Node.js, Express, REST APIs, Prisma");
+  addLeftRow("Database", "PostgreSQL, MongoDB, Redis");
+  addLeftRow("Cloud", "Docker, RabbitMQ, AWS S3, Cloudinary");
+  addLeftRow("Languages", "JavaScript, TypeScript");
   
-  addHeader("Hobbies");
-  addRow("Strategy", "Chess");
-  addRow("Creative", "Content Creation");
-  addRow("Leisure", "Music");
-
-  addBlank();
+  addLeftBlank();
   
-  addHeader("Contact");
-  addRow("Name", "Lakshay Vashishth");
-  addRow("Role", "Full Stack Software Engineer");
-  addRow("Location", "Sonipat, Haryana, India");
-  addRow("Email", "lakshayvashisth09@gmail.com");
-  addRow("GitHub", "VoidLakshay");
-  addRow("LinkedIn", "lakshayvashisth");
-  addRow("Discord", "voidlakshay");
+  addLeftHeader("Tools & OS");
+  addLeftRow("Environment", "Linux, VS Code, Git");
+  addLeftRow("API Testing", "Postman");
+  
+  addLeftBlank();
+  
+  addLeftHeader("Currently Learning");
+  addLeftRow("Focus", "System Design, AI Agents");
+  addLeftRow("Next", "Advanced Data Structures");
 
-  addBlank();
+  addLeftBlank();
+  
+  addLeftHeader("Hobbies");
+  addLeftRow("Strategy", "Chess");
+  addLeftRow("Creative", "Content Creation");
+  addLeftRow("Leisure", "Music");
 
-  addHeader("GitHub Statistics");
-  addStatsRow("Repositories", stats.repositories, "Followers", stats.followers);
-  addStatsRow("Stars", stats.stars, "Commits", formatNumber(stats.commits));
-  addStatsRow("Pull Requests", stats.prs, "Contributions", formatNumber(stats.contributions) + "+");
-  addRow("Lines of Code", formatNumber(stats.loc) + "+");
-  addRow("Languages Used", languagesText);
+  // --- Build Right Panel ---
+  addRightHeader("Education");
+  addRightRow("Degree", "BCA @ IITM Murthal");
+  addRightRow("Batch", "2025 - 2028");
 
-  // Adjusted width from 1000 to something like 600
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="580" viewBox="0 0 600 580">
+  addRightBlank();
+
+  addRightHeader("Contact");
+  addRightRow("Name", "Lakshay Vashishth");
+  addRightRow("Role", "Full Stack Software Engineer");
+  addRightRow("Location", "Sonipat, Haryana, India");
+  addRightRow("Email", "lakshayvashisth09@gmail.com");
+  addRightRow("GitHub", "VoidLakshay");
+  addRightRow("LinkedIn", "lakshayvashisth");
+  addRightRow("Discord", "voidlakshay");
+
+  addRightBlank();
+
+  addRightHeader("GitHub Statistics");
+  addRightStatsRow("Repositories", stats.repositories, "Followers", stats.followers);
+  addRightStatsRow("Stars", stats.stars, "Commits", formatNumber(stats.commits));
+  addRightStatsRow("Pull Requests", stats.prs, "Contributions", formatNumber(stats.contributions) + "+");
+  addRightRow("Lines of Code", formatNumber(stats.loc) + "+");
+  addRightRow("Languages Used", languagesText);
+
+  // SVG Height should adapt to the taller panel
+  const totalHeight = Math.max(leftY, rightY) + 20;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="920" height="${totalHeight}" viewBox="0 0 920 ${totalHeight}">
   <defs>
     <style>
       .text { font-family: Consolas, "Courier New", Courier, monospace; }
@@ -138,13 +153,16 @@ function generateSVG(theme = 'dark') {
   </defs>
 
   <!-- Background -->
-  <rect width="600" height="580" rx="12" fill="${bg}" stroke="${border}" stroke-width="1"/>
+  <rect width="920" height="${totalHeight}" rx="12" fill="${bg}" stroke="${border}" stroke-width="1"/>
   
   <!-- Terminal Header -->
   <text x="40" y="25" fill="${muted}" class="text header">lakshay@github:~$ neofetch<tspan class="cursor" fill="${value}"> █</tspan></text>
-  <text x="560" y="25" fill="${muted}" class="text footer" text-anchor="end">Last Updated: <tspan fill="${value}">${stats.lastUpdated}</tspan></text>
+  <text x="880" y="25" fill="${muted}" class="text footer" text-anchor="end">Last Updated: <tspan fill="${value}">${stats.lastUpdated}</tspan></text>
 
-  <!-- RIGHT PANEL (now single panel) -->
+  <!-- LEFT PANEL -->
+  ${leftPanelSVG}
+  
+  <!-- RIGHT PANEL -->
   ${rightPanelSVG}
 
 </svg>`;
