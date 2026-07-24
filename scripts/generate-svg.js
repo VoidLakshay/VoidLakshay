@@ -72,14 +72,14 @@ function generateSVG(theme = 'dark') {
   let leftPanelSVG = '';
   let rightPanelSVG = '';
 
-  const addLeftHeader = (text) => { leftPanelSVG += renderHeaderRow(leftPanelX, leftY, text) + '\\n'; leftY += rowHeight; };
-  const addLeftRow = (label, value) => { leftPanelSVG += renderRow(leftPanelX, leftY, label, value) + '\\n'; leftY += rowHeight; };
+  const addLeftHeader = (text) => { leftPanelSVG += renderHeaderRow(leftPanelX, leftY, text) + '\n'; leftY += rowHeight; };
+  const addLeftRow = (label, value) => { leftPanelSVG += renderRow(leftPanelX, leftY, label, value) + '\n'; leftY += rowHeight; };
   const addLeftBlank = () => { leftY += rowHeight; };
   
-  const addRightHeader = (text) => { rightPanelSVG += renderHeaderRow(rightPanelX, rightY, text) + '\\n'; rightY += rowHeight; };
-  const addRightRow = (label, value) => { rightPanelSVG += renderRow(rightPanelX, rightY, label, value) + '\\n'; rightY += rowHeight; };
+  const addRightHeader = (text) => { rightPanelSVG += renderHeaderRow(rightPanelX, rightY, text) + '\n'; rightY += rowHeight; };
+  const addRightRow = (label, value) => { rightPanelSVG += renderRow(rightPanelX, rightY, label, value) + '\n'; rightY += rowHeight; };
   const addRightBlank = () => { rightY += rowHeight; };
-  const addRightStatsRow = (l1, v1, l2, v2) => { rightPanelSVG += renderStatsRow(rightPanelX, rightY, l1, v1, l2, v2) + '\\n'; rightY += rowHeight; };
+  const addRightStatsRow = (l1, v1, l2, v2) => { rightPanelSVG += renderStatsRow(rightPanelX, rightY, l1, v1, l2, v2) + '\n'; rightY += rowHeight; };
 
   // --- Build Left Panel ---
   addLeftHeader("Tech Stack");
