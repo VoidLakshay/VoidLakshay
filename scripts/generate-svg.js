@@ -91,7 +91,7 @@ function generateSVG(theme = 'dark') {
   
   addLeftBlank();
   
-  addLeftHeader("Tools & OS");
+  addLeftHeader("Tools and OS");
   addLeftRow("Environment", "Linux, VS Code, Git");
   addLeftRow("API Testing", "Postman");
   

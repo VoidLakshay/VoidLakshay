@@ -28,7 +28,7 @@
 <text x="40" y="110.5" class="text row"><tspan fill="#57606A">. </tspan><tspan fill="#1F883D">Database: </tspan><tspan fill="#57606A">......................</tspan><tspan fill="#24292F"> PostgreSQL, MongoDB, Redis</tspan></text>
 <text x="40" y="129" class="text row"><tspan fill="#57606A">. </tspan><tspan fill="#1F883D">Cloud: </tspan><tspan fill="#57606A">...............</tspan><tspan fill="#24292F"> Docker, RabbitMQ, AWS S3, Cloudinary</tspan></text>
 <text x="40" y="147.5" class="text row"><tspan fill="#57606A">. </tspan><tspan fill="#1F883D">Languages: </tspan><tspan fill="#57606A">.........................</tspan><tspan fill="#24292F"> JavaScript, TypeScript</tspan></text>
-<text x="40" y="184.5" class="text title"><tspan fill="#57606A">- </tspan><tspan fill="#24292F">Tools & OS </tspan><tspan fill="#57606A">------------------------------------------------</tspan></text>
+<text x="40" y="184.5" class="text title"><tspan fill="#57606A">- </tspan><tspan fill="#24292F">Tools and OS </tspan><tspan fill="#57606A">----------------------------------------------</tspan></text>
 <text x="40" y="203" class="text row"><tspan fill="#57606A">. </tspan><tspan fill="#1F883D">Environment: </tspan><tspan fill="#57606A">..........................</tspan><tspan fill="#24292F"> Linux, VS Code, Git</tspan></text>
 <text x="40" y="221.5" class="text row"><tspan fill="#57606A">. </tspan><tspan fill="#1F883D">API Testing: </tspan><tspan fill="#57606A">......................................</tspan><tspan fill="#24292F"> Postman</tspan></text>
 <text x="40" y="258.5" class="text title"><tspan fill="#57606A">- </tspan><tspan fill="#24292F">Currently Learning </tspan><tspan fill="#57606A">----------------------------------------</tspan></text>
