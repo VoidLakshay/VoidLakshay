@@ -35,7 +35,7 @@ function generateSVG(theme = 'dark') {
   let rightY = 55;
   const rowHeight = 18.5;
 
-  const renderRow = (x, y, labelStr, valueStr, totalLen = 61) => {
+  const renderRow = (x, y, labelStr, valueStr, totalLen = 50) => {
     const prefix = `. ${labelStr}: `;
     const suffix = ` ${valueStr}`;
     let dotsCount = totalLen - prefix.length - suffix.length;
@@ -45,23 +45,23 @@ function generateSVG(theme = 'dark') {
     return `<text x="${x}" y="${y}" class="text row"><tspan fill="${muted}">. </tspan><tspan fill="${label}">${labelStr}: </tspan><tspan fill="${muted}">${dots}</tspan><tspan fill="${value}"> ${valueStr}</tspan></text>`;
   };
 
-  const renderHeaderRow = (x, y, text, totalLen = 61) => {
+  const renderHeaderRow = (x, y, text, totalLen = 50) => {
     let dashes = '';
     for(let i = 0; i < (totalLen - text.length - 3); i++) dashes += '-';
     return `<text x="${x}" y="${y}" class="text title"><tspan fill="${muted}">- </tspan><tspan fill="${value}">${text} </tspan><tspan fill="${muted}">${dashes}</tspan></text>`;
   };
 
-  const renderStatsRow = (x, y, lbl1, val1, lbl2, val2, totalLen = 61) => {
+  const renderStatsRow = (x, y, lbl1, val1, lbl2, val2, totalLen = 50) => {
      const leftPrefix = `. ${lbl1}: `;
      const leftSuffix = ` ${val1} `;
-     let leftDotsCount = 30 - leftPrefix.length - leftSuffix.length;
+     let leftDotsCount = 25 - leftPrefix.length - leftSuffix.length;
      if (leftDotsCount < 1) leftDotsCount = 1;
      let leftDots = '';
      for(let i = 0; i < leftDotsCount; i++) leftDots += '.';
      
      const rightPrefix = `${lbl2}: `;
      const rightSuffix = ` ${val2}`;
-     let rightDotsCount = totalLen - 32 - rightPrefix.length - rightSuffix.length;
+     let rightDotsCount = totalLen - 26 - rightPrefix.length - rightSuffix.length;
      if (rightDotsCount < 1) rightDotsCount = 1;
      let rightDots = '';
      for(let i = 0; i < rightDotsCount; i++) rightDots += '.';
