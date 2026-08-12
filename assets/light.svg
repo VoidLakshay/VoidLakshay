@@ -19,7 +19,7 @@
   
   <!-- Terminal Header -->
   <text x="40" y="25" fill="#57606A" class="text header">lakshay@github:~$ neofetch<tspan class="cursor" fill="#24292F"> █</tspan></text>
-  <text x="880" y="25" fill="#57606A" class="text footer" text-anchor="end">Last Updated: <tspan fill="#24292F">2026-08-11 00:45:30 UTC</tspan></text>
+  <text x="880" y="25" fill="#57606A" class="text footer" text-anchor="end">Last Updated: <tspan fill="#24292F">2026-08-12 00:53:37 UTC</tspan></text>
 
   <!-- LEFT PANEL -->
   <text x="40" y="55" class="text title"><tspan fill="#57606A">- </tspan><tspan fill="#24292F">Tech Stack </tspan><tspan fill="#57606A">-------------------------------------</tspan></text>
